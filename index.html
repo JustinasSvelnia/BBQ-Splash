@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="main-content">
+    <div class="main-content" id="Main-content">
       <div class="container">
         <h2>Become a BBQ master!</h2>
         <p>Register Today</p>
@@ -29,9 +29,24 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
-        <form class="email-collector">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email" required />
+        <form
+          class="email-collector"
+          action="#"
+          method="POST"
+          id="Email-collector"
+        >
+          <input
+            name="firstName"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            name="emailAddress"
+            type="email"
+            placeholder="Email"
+            required
+          />
           <button class="btn btn-primary" type="submit">Register</button>
         </form>
         <p class="fine-print">
@@ -39,5 +54,6 @@
         </p>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
